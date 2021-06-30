@@ -69,9 +69,9 @@ class Play extends Phaser.Scene {
 
     update() {
         //check key input for restart
-        this.ship01.update(); // update spaceships (x3)
-        this.ship02.update();
-        this.ship03.update();
+        //this.ship01.update(); // update spaceships (x3)
+        //this.ship02.update();
+        //this.ship03.update();
         if (this.gameOver && Phaser.Input.Keyboard.JustDown(keyR)) {
             this.scene.restart();
         }
