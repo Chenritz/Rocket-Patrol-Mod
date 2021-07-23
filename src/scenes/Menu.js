@@ -8,6 +8,8 @@ class Menu extends Phaser.Scene {
         this.load.audio('sfx_select', './assets/assets_blip_select12.wav');
         this.load.audio('sfx_explosion', './assets/assets_explosion38.wav');
         this.load.audio('sfx_rocket', './assets/assets_rocket_shot.wav');
+        //load start menu screen
+        //this.load.image('Rocket Patrol Mod Title Scrren', './assets/Rocket Patrol Mod Title Screen');
     }
 
     create() {
@@ -26,12 +28,14 @@ class Menu extends Phaser.Scene {
         }
 
         // show menu text
+        // /*
         this.add.text(game.config.width/2, game.config.height/2 - borderUISize - borderPadding, 'ROCKET PATROL', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/2, 'Use <--> arrows to move & (F) to fire', menuConfig).setOrigin(0.5);
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
         this.add.text(game.config.width/2, game.config.height/2 + borderUISize + borderPadding, 'Press <- for Novice or -> for Expert', menuConfig).setOrigin(0.5);
-
+        // */
+        //this.load.image();
         // define keys
         keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
